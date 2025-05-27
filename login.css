@@ -117,6 +117,23 @@ span{
     text-align: center;
 }
 
+.welcome-txt{
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 50px;
+}
+
+.welcome-line {
+    width: 350px;
+    height: 4px;
+    background-color: white;
+    border: none;
+    margin-top: -30px;
+    margin-bottom: 35px;
+    border-radius: 2px;
+    margin-left: 50px;
+}
+
 
 .form-div h1{
     color: white;
@@ -124,6 +141,19 @@ span{
     font-size: 35px;
     padding-bottom: 30px;
     letter-spacing: 2px;
+}
+
+.form-div a{
+    text-decoration: none;
+    text-align: center;
+    color: #373435;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.form-div a:hover{
+    color: #bd3470 !important;
+    transform: scale(1.1) !important;
 }
 
 
@@ -176,6 +206,7 @@ input:focus, select:focus {
     margin-top: 20px;
     width: 50% !important;
     letter-spacing: 2px !important;
+    margin-bottom: 20px !important;
 }
 
 .submit:hover {
@@ -280,6 +311,16 @@ input:focus, select:focus {
     input, select {
         padding: 12px 16px !important;  
         width: 100% !important;
+    }
+
+    .welcome-txt{
+        font-size: 25px !important;
+        margin-left: 0px;
+        color: #bd3470 !important;  
+    }
+
+    .welcome-line {
+        display: none;
     }
     
 
