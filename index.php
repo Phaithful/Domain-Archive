@@ -39,18 +39,19 @@
         <div class="container form-div">
             <div class="form-bg">
                 <h1>Sign <span>Up</span></h1>
-                <form action="auth/signup.php" method="post">
-                    <div class="inputs-div">
-                        <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name" required>
-                        <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name" required>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
-                        <input class="form-control" type="password" name="password" id="password" placeholder="Password">
-                    </div>
+        <form action="auth/signup.php" method="post">
+            <div class="inputs-div">
+                <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name">
+                <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name">
+                <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
+                <input class="form-control" type="password" name="password" id="password" placeholder="Password">
+                <input class="form-control" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+            </div>
+            <div>
+                <input type="submit" name="submit" value="SUBMIT" class="submit">
+            </div>
+        </form>
 
-                    <div>
-                        <input type="submit" name="submit" value="SUBMIT" class="submit">
-                    </div>
-                </form>
             </div>
             
         </div>
