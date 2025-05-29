@@ -46,7 +46,7 @@
 
             <div class="form-bg">
                 <h1>Log <span>In</span></h1>
-                <form action="">
+                <form action="auth/login.php" method="post">
                     <div class="inputs-div">
                         <input class="form-control" type="email" name="email" id="email" placeholder="E-mail / User Name">
                         <input class="form-control" type="password" name="password" id="password" placeholder="Password">

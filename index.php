@@ -15,8 +15,6 @@
 
 
 </head>
-
-
 <body>
     
     <section class="hero">
@@ -31,9 +29,7 @@
             <h2>Domain Archive</h2>
             <hr class="underline">
             <p>The Domain Archive is a centralized platform designed to securely store, organize, and monitor all your domain names in one place. Whether you own 5 or 500 domains, it gives you a clean, categorized overview of your entire Domain List</p>
-            <a href="login.php">Already have an account? <span>Log In</span></a>
-
-            
+            <a href="login.php">Already have an account? <span>Log In</span></a>       
             
         </div>
        <!-- Details div Ending -->
@@ -43,7 +39,7 @@
         <div class="container form-div">
             <div class="form-bg">
                 <h1>Sign <span>Up</span></h1>
-                <form action="">
+                <form action="auth/signup.php" method="post">
                     <div class="inputs-div">
                         <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name" required>
                         <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name" required>
