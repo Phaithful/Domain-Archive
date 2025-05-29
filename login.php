@@ -56,7 +56,7 @@
                         <input type="submit" name="submit" value="SUBMIT" class="submit">
                     </div>
 
-                    <a href="#">Forgot Password?</span></a>
+                    <a href="forgot-password.php">Forgot Password?</span></a>
                 </form>
             </div>
             
