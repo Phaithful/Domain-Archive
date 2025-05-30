@@ -76,3 +76,51 @@ $(document).ready(function () {
 
 
 });
+
+// Handle Submit button click
+$('.submit').click(function () {
+    const otpInputs = $('.otp');
+    let otp = '';
+
+    // Concatenate all 6 digits
+    otpInputs.each(function () {
+        otp += $(this).val();
+    });
+
+    if (otp.length !== 6) {
+        alert('Please enter all 6 digits of the OTP');
+        return;
+    }
+
+    // Get the email — either from URL or a hidden input
+        const email = $('#user-email').val();
+
+
+    if (!email) {
+        alert("Missing email. Cannot verify OTP.");
+        return;
+    }
+
+    // Send AJAX request to verify OTP
+    $.ajax({
+        url: 'auth/verify-otp.php',
+        type: 'POST',
+        data: {
+            otp: otp,
+            email: email
+        },
+        dataType: 'json',
+        success: function (response) {
+            const res = JSON.parse(response);
+            if (res.status === 'success') {
+                // Redirect to reset-password page with token
+                window.location.href = `reset-password.php?token=${res.token}&email=${res.email}`;
+            } else {
+                alert(res.message);
+            }
+        },
+        error: function () {
+            alert("Something went wrong. Please try again.");
+        }
+    });
+});

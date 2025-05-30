@@ -1,0 +1,11 @@
+[30-May-2025 13:36:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php:29
+Stack trace:
+#0 C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php(29): mysqli->prepare('SELECT id FROM ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php on line 29
+[30-May-2025 13:45:49 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php:28
+Stack trace:
+#0 C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php(28): mysqli->prepare('SELECT id FROM ...')
+#1 {main}
+  thrown in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php on line 28
+[30-May-2025 13:51:02 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php on line 55

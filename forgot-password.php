@@ -32,7 +32,7 @@
         </div>
 
         <div class="right-nav">
-            <p>Don't have an account? <a href="index.php">Sign In</a></p>
+            <p>Don't have an account? <a href="index.php">Sign up</a></p>
         </div>
 
     </nav>
