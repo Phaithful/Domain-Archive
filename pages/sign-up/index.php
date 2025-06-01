@@ -23,13 +23,13 @@
         <!-- Details div -->
         <div class="container details-div">
             <div class="logo">
-                <img src="images/logo.png" alt="logo image">
+                <img src="../../images/logo.png" alt="logo image">
             </div>
             <h1>Access Solutions <br> Limited</h1>
             <h2>Domain Archive</h2>
             <hr class="underline">
             <p>The Domain Archive is a centralized platform designed to securely store, organize, and monitor all your domain names in one place. Whether you own 5 or 500 domains, it gives you a clean, categorized overview of your entire Domain List</p>
-            <a href="login.php">Already have an account? <span>Log In</span></a>       
+            <a href="../login/login.php">Already have an account? <span>Log In</span></a>       
             
         </div>
        <!-- Details div Ending -->

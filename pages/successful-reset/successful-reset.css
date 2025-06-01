@@ -1,0 +1,165 @@
+body{
+    padding: 30px !important;
+    margin: 0 !important;
+    font-family: 'Montserrat' !important;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between
+}
+
+.left-nav a{
+    display: flex;
+    text-decoration: none;
+    color: #323842;
+}
+
+.left-nav p{
+    padding-top: 8px;
+    padding-left: 15px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.right-nav{
+    padding-top: 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #323842;
+}
+
+.right-nav a{
+    text-decoration: none;
+    color: #bd3470;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.successful-img{
+    margin-top: -150px;
+    margin-bottom: 30px;
+    position: relative;
+    top: -50px;
+}
+
+.hero h1{
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    color: #323842;
+}
+
+.hero p{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+    color: #323842;
+}
+
+
+
+
+.back-to-login{
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.back-to-login p{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+    color: #323842;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.back-to-login :hover{
+    color: #bd3470;
+    
+}
+
+
+.no-account{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(min-width: 0px) and (max-width: 480px){
+
+    body{
+        padding: 10px 15px !important;
+    }
+
+    .name-txt{
+        display: none;
+    }
+
+
+    nav{
+        display: none;
+    }
+
+    .forgot-img{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .inputs-div {
+        width: 85vw;
+    }
+
+    .submit{
+        width: 85% !important;
+    }
+
+}
+
+
+
+@media(min-width: 481px) and (max-width: 1279px){
+
+    .inputs-div {
+        width: 55vw;
+    }
+
+    .submit{
+        width: 55% !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

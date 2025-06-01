@@ -25,13 +25,13 @@
         <!-- Details div -->
         <div class="container details-div">
             <div class="logo">
-                <img src="images/logo.png" alt="logo image">
+                <img src="../../images/logo.png" alt="logo image">
             </div>
             <h1>Access Solutions <br> Limited</h1>
             <h2>Domain Archive</h2>
             <hr class="underline">
             <p>Welcome back to your Domain Archive where your domain are securely stored, organized, and monitored. All your domain names in one Archive, it gives you a clean, categorized overview of your entire Domain List</p>
-            <a href="index.php">Don't have an Account? <span>Sign Up</span></a>
+            <a href="../sign-up/index.php">Don't have an Account? <span>Sign Up</span></a>
 
             
             
@@ -56,7 +56,7 @@
                         <input type="submit" name="submit" value="SUBMIT" class="submit">
                     </div>
 
-                    <a href="forgot-password.php">Forgot Password?</span></a>
+                    <a href="../forgot-password/forgot-password.php">Forgot Password?</span></a>
                 </form>
             </div>
             
