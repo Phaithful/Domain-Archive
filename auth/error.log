@@ -9,3 +9,13 @@ Stack trace:
 #1 {main}
   thrown in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php on line 28
 [30-May-2025 13:51:02 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\forgot-password.php on line 55
+[03-Jun-2025 15:25:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reset_token' in 'field list' in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php:49
+Stack trace:
+#0 C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php(49): mysqli->prepare('\r\n    UPDATE us...')
+#1 {main}
+  thrown in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php on line 49
+[03-Jun-2025 15:25:56 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reset_token' in 'field list' in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php:49
+Stack trace:
+#0 C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php(49): mysqli->prepare('\r\n    UPDATE us...')
+#1 {main}
+  thrown in C:\xampp\htdocs\domain-management-system\Domain-Archive\auth\verify-otp.php on line 49

@@ -182,6 +182,21 @@ input:focus, select:focus {
     background-color: #eeccdb !important;
 }
 
+.alert {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
 
 
 

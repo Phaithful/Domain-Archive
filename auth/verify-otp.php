@@ -1,8 +1,13 @@
 <?php
-header('Content-Type: application/json');
+// Debugging settings
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/error.log');
 
+header('Content-Type: application/json');
+
+// Include DB connection
 include '../config/db-connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {

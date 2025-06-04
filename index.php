@@ -39,7 +39,7 @@
         <div class="container form-div">
             <div class="form-bg">
                 <h1>Sign <span>Up</span></h1>
-        <form action="auth/signup.php" method="post">
+        <form id="signupForm">
             <div class="inputs-div">
                 <input class="form-control" type="text" name="fname" id="fname" placeholder="First Name">
                 <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name">
@@ -50,6 +50,7 @@
             <div>
                 <input type="submit" name="submit" value="SUBMIT" class="submit">
             </div>
+            <div id="signupMessage" class="mt-3"></div>
         </form>
 
             </div>
@@ -58,8 +59,6 @@
         <!-- Form div Ending -->
 
     </section>
-
+<script src="assets/js/signup.js"></script>
 </body>
-
-
 </html>
