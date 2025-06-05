@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session
 include '../config/db-connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $decrypted_password = openssl_decrypt($encrypted_password, 'AES-128-CBC', $secret_key, 0, $iv);
 
         if ($password === $decrypted_password) {
+            $_SESSION['username'] = $email; // ✅ Save email to session
             echo "<div class='alert alert-success'>Login successful! Redirecting...</div>";
         } else {
             echo "<div class='alert alert-danger'>Incorrect password.</div>";

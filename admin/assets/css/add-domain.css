@@ -337,12 +337,6 @@ aside .sidebar .notification-count{
 }
 
 
-
-
-
-
-
-
 .top-right{
     margin-top: 1.4rem;
 }
@@ -357,7 +351,6 @@ aside .sidebar .notification-count{
 .top-right .top button{
     display: none;
 }
-
 .top-right .theme-toggler{
     background: var(--color-light);
     display: flex;
@@ -393,7 +386,29 @@ aside .sidebar .notification-count{
     align-items: center;
 }
 
+.animated-alert {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 15px 25px;
+    z-index: 9999;
+    background-color: #D3212C; /* Green */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: opacity 1s ease, transform 0.5s ease;
+}
 
+.animated-alert.error {
+    background-color: #f44336; /* Red */
+}
+
+.animated-alert.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
 
 
 

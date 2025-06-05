@@ -74,7 +74,7 @@
                 </a>
 
 
-                <a href="#">
+                <a href="auth/logout.php" class="logout">
                     <span class="material-symbols-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -125,34 +125,29 @@
 
             <div class="main-section">
                 <h1>Add Domain</h1>
-
-                <div class="main-form">
-
+                <form id="add-domain-form" class="main-form">
                     <div>
-                        <label for="domain-name">Domain Name</label>
-                        <input type="text" name="domain-name" class="domain-name">
+                        <label for="domain_name">Domain Name</label>
+                        <input type="text" name="domain_name" class="domain-name">
                     </div>
                     
                     <div>
-                        <label for="date-purchased">Date Purchased</label>
-                        <input type="date" name="date-purchased" class="date-purchased">
+                        <label for="purchase_date">Date Purchased</label>
+                        <input type="date" name="purchase_date" class="date-purchased">
                     </div>
                     
                     <div>
-                        <label for="expiry-date">Expiry Date</label>
-                        <input type="date" name="expiry-date" class="expiry-date">
+                        <label for="expiry_date">Expiry Date</label>
+                        <input type="date" name="expiry_date" class="expiry-date">
                     </div>
 
                     <div>
-                        <label for="registrar">Registrar</label>
+                        <label for="registrar">Registrar (host company)</label>
                         <input type="text" name="registrar" class="registrar">
                     </div>
 
                     <button class="submit" id="submit">Add Domain</button>
-                        
-
-                </div>
-                
+                </form>  
             </div>
             
 
@@ -166,7 +161,7 @@
 
 
     </div>
-
+<script src="assets/js/add-domain.js"></script>
 </body>
 
 
