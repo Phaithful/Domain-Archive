@@ -45,8 +45,9 @@ $otp = random_int(100000, 999999);
 $otp_expiry = date("Y-m-d H:i:s", strtotime("+10 minutes"));
 
 // Save OTP and expiry to database
-$update = $conn->prepare("UPDATE userdata SET reset_pwd_link = ?, pass_expire = ? WHERE email = ?");
+$update = $conn->prepare("UPDATE userdata SET reset_otp = ?, reset_otp_expiry = ? WHERE email = ?");
 $update->bind_param("sss", $otp, $otp_expiry, $email);
+
 
 if (!$update->execute()) {
     echo json_encode(["status" => "error", "message" => "Failed to save OTP. Try again later."]);

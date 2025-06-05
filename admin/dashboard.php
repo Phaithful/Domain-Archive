@@ -9,7 +9,13 @@
 
     <!-- Document Links -->
     <link rel="stylesheet" href="assets/css/dashboard.css">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet">
+
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Document Links End -->
@@ -30,7 +36,11 @@
             <!-- Top section of the side bar [Logo & Company Name]-->
             <div class="top">
                 <div class="logo">
+<<<<<<< HEAD
                     <img src="../images/logo.png" alt="logo">
+=======
+                    <img src="../../images/logo.png" alt="logo">
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
                     <h2>Access <span class="logo-span">Solution</span></h2>
                 </div>
 
@@ -54,23 +64,31 @@
                     <h3>Domain</h3>
                 </a>
 
+<<<<<<< HEAD
                 <a href="add-domain.php">
                     <span class="material-symbols-sharp">add</span>
                     <h3>Add Domain</h3>
                 </a>
 
+=======
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
                 <a href="#">
                     <span class="material-symbols-sharp">bring_your_own_ip</span>
                     <h3>Registrars</h3>
                 </a>
 
                 <a href="#">
+<<<<<<< HEAD
                     <span class="material-symbols-sharp">notifications</span>
+=======
+                    <span class="material-symbols-outlined">notifications</span>
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
                     <h3>Messages</h3>
                     <span class="notification-count">18</span>
                 </a>
 
                 <a href="#">
+<<<<<<< HEAD
                     <span class="material-symbols-sharp">settings</span>
                     <h3>Settings</h3>
                 </a>
@@ -78,6 +96,19 @@
 
                 <a href="#">
                     <span class="material-symbols-sharp">logout</span>
+=======
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>Add Domain</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
                     <h3>Logout</h3>
                 </a>
                 
@@ -89,12 +120,19 @@
         <!---------------------- Collapsable Side Bar Ending --------------------------->
 
 
+<<<<<<< HEAD
         <!---------- Main Section --------------------->
+=======
+
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
         <main>
 
             <h1>Dashboard</h1>
 
+<<<<<<< HEAD
             <!------------------ Insight End --------------------->
+=======
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
             <div class="insights">
 
                 <!--------------- Active Card ----------------->
@@ -175,6 +213,7 @@
                 <!--------------- Expired Card End ----------------->
 
             </div>
+<<<<<<< HEAD
             <!------------------ Insight End --------------------->
 
 
@@ -343,6 +382,11 @@
             <!---------- End of Recent Updates ----------->
 
         </div>
+=======
+
+
+        </main>
+>>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
 
 
     </div>

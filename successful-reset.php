@@ -44,10 +44,8 @@
         
         <img src="images/icons/password-changed.png" alt="Password Changed Icon" class="successful-img">
 
-        <h1>Pasword Successfully Changed</h1>
+        <h1>Password Successfully Changed</h1>
         <p>Your password has been successfully changed, you can head back and re-login</p>
-
-        
 
         <a href="login.php" class="back-to-login">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#323842" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">

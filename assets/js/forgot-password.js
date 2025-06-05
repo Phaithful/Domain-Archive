@@ -8,7 +8,7 @@ $('#submit_btn').click(function () {
     }
 
 $.ajax({
-    url: 'auth/forgot-password.php',
+    url: '/domain-management-system/Access-Archive/Domain-Archive/auth/forgot-password.php',
     method: 'POST',
     data: { email: email },
     dataType: 'json', // ✅ Tell jQuery to parse the response as JSON
