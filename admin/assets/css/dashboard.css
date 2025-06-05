@@ -60,11 +60,7 @@ body{
     width: 96%;
     margin: 0 auto;
     gap: 1.8rem;
-<<<<<<< HEAD
     grid-template-columns: 17rem auto 22rem;
-=======
-    grid-template-columns: 17rem auto;
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
 }
 
 
@@ -256,7 +252,6 @@ aside .sidebar .notification-count{
     border-radius: var(--border-radius-1);
 }
  
-<<<<<<< HEAD
 
 main{
     margin-top: 3rem;
@@ -406,123 +401,17 @@ main .recent-domains a{
 }
 
 .right .top{
-=======
-.main-section{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-section h1{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
-
-.main-form{
-    margin: 0; /* Remove default margin */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    flex-direction: column;
-    padding: 50px;
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
-    color: var(--color-dark-varient);
-    background: var(--color-white);
-    gap: 1.5rem;
-    width: 35vw;
-}
-
-.main-form:hover{
-    box-shadow: none;
-}
-
-
-
-.main-form input, select {
-    padding: 10px 16px ;
-    border: none ;
-    border-bottom: 3px solid var(--color-dark-varient); 
-    border-radius: 0;                
-    background-color: transparent; 
-    font-size: 1.2rem ;
-    font-weight: 500 ;
-    letter-spacing: 1px;
-    width: 100%;
-    outline: none;               
-    box-shadow: none;   
-    
-}
-
-
-.main-form input:focus, select:focus {
-  border-bottom: 3px solid var(--pink) ;
-  background-color: transparent;
-}
-
-.main-form label {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-info-dark);
-  letter-spacing: 0.5px;
-}
-
-
-.submit{
-    padding: 0.7rem 2rem ;
-    background-color: #bd3470 ;
-    border: none ;
-    color: white ;
-    font-weight: 600 ;
-    font-size: 1.1rem;
-    cursor: pointer ;
-    border-radius: var(--border-radius-2);
-    transition: all 400ms ease;
-    margin-top: 20px;
-    width: 100%;
-    height: 40px;
-    letter-spacing: 2px ;
-    box-shadow: var(--box-shadow);
-    
-}
-
-.submit:hover {
-    transform: scale(1.05);
-}
-
-
-
-
-
-
-
-
-.top-right{
-    margin-top: 1.4rem;
-}
-
-.top-right .top{
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 2rem;
 }
 
-<<<<<<< HEAD
 .right .top button{
     display: none;
 }
 
 .right .theme-toggler{
-=======
-.top-right .top button{
-    display: none;
-}
-
-.top-right .theme-toggler{
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     background: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -533,11 +422,7 @@ main .recent-domains a{
     border-radius: var(--border-radius-1);
 }
 
-<<<<<<< HEAD
 .right .theme-toggler span{
-=======
-.top-right .theme-toggler span{
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
@@ -546,22 +431,14 @@ main .recent-domains a{
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .right .theme-toggler span.active{
-=======
-.top-right .theme-toggler span.active{
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     background: var(--pink);
     color: white;
     border-radius: var(--border-radius-1);
     width: 50%;
 }
 
-<<<<<<< HEAD
 .right .top .profile{
-=======
-.top-right .top .profile{
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
     display: flex;
     gap: 0.8rem;
     text-align: right;
@@ -571,7 +448,6 @@ main .recent-domains a{
 
 
 
-<<<<<<< HEAD
 .right .recent-updates{
     margin-top: 1rem;
 }
@@ -606,8 +482,6 @@ main .recent-domains a{
 
 
 
-=======
->>>>>>> a65d2e5800a76704c31f94c106ed7c5d0ba8514e
 
 
 
