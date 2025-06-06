@@ -42,7 +42,7 @@
             <!-- Actual Side Bar Menu/Links -->
             <div class="sidebar">
                 
-                <a href="#">
+                <a href="dashboard.php">
                     <span class="material-symbols-sharp">dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
@@ -126,7 +126,7 @@
             <div class="main-section">
                 <h1>Add Domain</h1>
 
-                <div class="main-form">
+                <form action="" class="main-form">
 
                     <div>
                         <label for="domain-name">Domain Name</label>
@@ -149,6 +149,10 @@
                     </div>
 
                     <button class="submit" id="submit">Add Domain</button>
+
+                </form>
+
+                    
                         
 
                 </div>

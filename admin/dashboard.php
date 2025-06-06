@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="close" id="closeBtn">
-                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-sharp">close</span>
                 </div>
             </div>
             <!-- Top section of the side bar ending -->
@@ -194,7 +194,7 @@
                     </thead>
 
                     <tbody>
-                        <tr>
+                        <!--<tr>
                             <td>Accesssolution.org</td>
                             <td class="warning">Warning</td>
                             <td>21-06-2025</td>
@@ -202,52 +202,7 @@
                             <td>Hostinger</td>
                             <td class="primary">Action</td>
                         </tr>
-
-                        <tr>
-                            <td>Garnet.ng.com</td>
-                            <td class="success">Active</td>
-                            <td>11-04-2027</td>
-                            <td>No</td>
-                            <td>GitHub</td>
-                            <td class="primary">Action</td>
-                        </tr>
-
-                        <tr>
-                            <td>environmental.com</td>
-                            <td class="success">Active</td>
-                            <td>07-02-2026</td>
-                            <td>No</td>
-                            <td>Hostinger</td>
-                            <td class="primary">Action</td>
-                        </tr>
-
-                        <tr>
-                            <td>Accesssolution.org</td>
-                            <td class="danger">Expired</td>
-                            <td>03-06-2025</td>
-                            <td>No</td>
-                            <td>Google Host</td>
-                            <td class="primary">Action</td>
-                        </tr>
-
-                        <tr>
-                            <td>spacg.ng</td>
-                            <td class="warning">Warning</td>
-                            <td>18-06-2025</td>
-                            <td>yes</td>
-                            <td>Hostinger</td>
-                            <td class="primary">Action</td>
-                        </tr>
-
-                        <tr>
-                            <td>gouni.edu.ng</td>
-                            <td class="success">Active</td>
-                            <td>30-07-2026</td>
-                            <td>No</td>
-                            <td>Hostinger</td>
-                            <td class="primary">Action</td>
-                        </tr>
-
+                        -->                  
                     </tbody>
 
                 </table>
@@ -264,7 +219,7 @@
             <!-- Top of right section -->
             <div class="top">
 
-                <button id="menu-btn">
+                <button id="menuBtn">
                     <span class="material-symbols-sharp">segment</span>
                 </button>
 
@@ -291,11 +246,63 @@
 
             <!-------------- Domain Analytics --------------->
             <div class="domain-analytics">
+
                 <h2>Domain Analytics</h2>
 
                 <div class="item active">
-                    <span class="material-symbols-sharp">domain</span>
+                    <div class="icon">
+                        <span class="material-symbols-sharp">domain</span>
+                    </div>
+                
+                    <div class="right">
+                        <div class="info">
+                            <h3>Active</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">56.25%</h5>
+                        <h3>45</h3>
+                    </div>
                 </div>
+
+                <div class="item expire-soon">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">domain_disabled</span>
+                    </div>
+                
+                    <div class="right">
+                        <div class="info">
+                            <h3>Expire Soon</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="warning">12.5%</h5>
+                        <h3>10</h3>
+                    </div>
+                </div>
+
+                <div class="item expired">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">warning</span>
+                    </div>
+                
+                    <div class="right">
+                        <div class="info">
+                            <h3>Expired</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">31.25%</h5>
+                        <h3>25</h3>
+                    </div>
+                </div>
+
+
+
+                <div class="item add-domain">
+                    <a>
+                        <span class="material-symbols-sharp">add</span>
+                        <h3>Add Domain</h3>
+                    </a>
+                </div>
+
             </div>
 
 
@@ -347,6 +354,8 @@
 
     </div>
     
+    <script src="assets/js/domain-list.js"></script>
+    <script src="assets/js/dashboard.js"></script>
 </body>
 
 
