@@ -49,7 +49,7 @@
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="#" >
+                <a href="all-domains.php" >
                     <span class="material-symbols-sharp">dns</span>                    
                     <h3>Domain</h3>
                 </a>
@@ -76,7 +76,7 @@
                 </a>
 
 
-                <a href="#">
+                <a href="auth/logout.php">
                     <span class="material-symbols-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -193,17 +193,10 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <!--<tr>
-                            <td>Accesssolution.org</td>
-                            <td class="warning">Warning</td>
-                            <td>21-06-2025</td>
-                            <td>Yes</td>
-                            <td>Hostinger</td>
-                            <td class="primary">Action</td>
-                        </tr>
-                        -->                  
-                    </tbody>
+                <tbody>
+                <?php include 'auth/recent-domains.php'; ?>
+                </tbody>
+
 
                 </table>
                 <a href="#">Show All</a>
@@ -354,7 +347,7 @@
 
     </div>
     
-    <script src="assets/js/domain-list.js"></script>
+    <!-- <script src="assets/js/domain-list.js"></script> -->
     <script src="assets/js/dashboard.js"></script>
 </body>
 

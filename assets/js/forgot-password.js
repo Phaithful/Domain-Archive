@@ -18,6 +18,7 @@ $.ajax({
         if (response.status === 'success') {
             window.location.href = `email-sent.php?email=${encodeURIComponent(email)}`;
         } else {
+             $('#email').val('');
             alert(response.message || "Something went wrong.");
         }
     },

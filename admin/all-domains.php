@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Domain</title>
+    <title>All Domains</title>
 
     <!-- Linking Files Documents -->
     <link rel="stylesheet" href="assets/css/add-domain.css">
@@ -47,12 +47,12 @@
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="all-domains.php" >
+                <a href="#" >
                     <span class="material-symbols-sharp">dns</span>                    
                     <h3>Domain</h3>
                 </a>
 
-                <a href="#" class="active">
+                <a href="add-domain.php" class="active">
                     <span class="material-symbols-sharp">add</span>
                     <h3>Add Domain</h3>
                 </a>
@@ -125,54 +125,35 @@
 
             <div class="main-section">
                 <h1>Add Domain</h1>
-                <form id="add-domain-form" class="main-form">
-                    <div>
-                        <label for="domain_name">Domain Name</label>
-                        <input type="text" name="domain_name" class="domain-name">
-                    </div>
-                    
-                    <div>
-                        <label for="purchase_date">Date Purchased</label>
-                        <input type="date" name="purchase_date" class="date-purchased">
-                    </div>
-                    
-                    <div>
-                        <label for="expiry_date">Expiry Date</label>
-                        <input type="date" name="expiry_date" class="expiry-date">
-                    </div>
+            <div class="recent-domains">
+                <h2>All Domains Added</h2>
+                <table>
 
-                    <div>
-                        <label for="registrar">Registrar (host company)</label>
-                        <input type="text" name="registrar" class="registrar">
-                    </div>
-                    <div>
-                <label>Auto Renew</label>
-                <div style="display: flex; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
-                    <label style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="radio" name="auto_renew" value="1" required>
-                    Yes
-                    </label>
-                    <label style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="radio" name="auto_renew" value="0">
-                    No
-                    </label>
-                </div>
-                </div>
+                    <thead>
+                        <tr>
+                            <th>Domain Name</th>
+                            <th>Status</th>
+                            <th>Expiry Date</th>
+                            <th>Auto Renew</th>
+                            <th>Registrar</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                <tbody>
+                <?php include 'auth/recent-domains.php'; ?>
+                </tbody>
 
 
-                    <button class="submit" id="submit">Add Domain</button>
-
-                </form>
-
-                    
-                        
-
-                </div>
-                
+                </table>
+                <a href="#">Show All</a>
             </div>
-            
 
-            
+        </div>
+
+    </div>
+
+
 
         </main>
         <!---------- Main Section Ending --------------------->

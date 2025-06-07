@@ -409,6 +409,11 @@ aside .sidebar .notification-count{
     opacity: 0;
     transform: translateY(-20px);
 }
+input[type="radio"] {
+    appearance: radio !important;
+    accent-color: var(--pink); /* Optional: pink theme */
+    cursor: pointer;
+}
 
 
 
