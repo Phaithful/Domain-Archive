@@ -76,12 +76,63 @@ try {
     // Email content
     $mail->isHTML(true);
     $mail->Subject = 'Your OTP Code';
-    $mail->Body    = "
-        <p>Hello,</p>
-        <p>Your OTP code is <strong>$otp</strong>.</p>
-        <p>This code will expire in 10 minutes.</p>
-        <p>If you did not request a password reset, please ignore this message.</p>
-    ";
+    $mail->Body = '
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+        </style>
+        </head>
+        <body style="margin: 0; padding: 0; background-color: #181a1e; font-family: Montserrat, sans-serif; color: #edeffd;">
+
+        <div style="max-width: 600px; margin: 40px auto; background-color: #1f2126; padding: 30px; border-radius: 10px;">
+            <h2 style="color: #bd3470; margin-bottom: 20px;">Verify Your Email Address</h2>
+
+            <p style="font-size: 16px; line-height: 1.6;">Hello,</p>
+            <p style="font-size: 16px; line-height: 1.6;">
+            Please use the following One-Time Password (OTP):
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
+        ';
+
+        foreach (str_split($otp) as $digit) {
+        $mail->Body .= '
+            <div style="
+                width: 40px;
+                height: 50px;
+                background-color: #edeffd;
+                color: #181a1e;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #bd3470;
+            ">' . $digit . '</div>
+        ';
+        }
+
+        $mail->Body .= '
+            </div>
+
+            <p style="font-size: 16px; line-height: 1.6;">
+            This passcode will expire in <strong>10 minutes</strong>.
+            </p>
+
+            <p style="font-size: 14px; color: #999999; margin-top: 30px;">
+            If you did not request this, you can safely ignore this email.
+            </p>
+
+            <p style="font-size: 14px; color: #999999;">– Your Website Team</p>
+        </div>
+
+        </body>
+        </html>
+    ';
 
     $mail->send();
 

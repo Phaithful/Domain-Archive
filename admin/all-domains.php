@@ -7,7 +7,7 @@
     <title>All Domains</title>
 
     <!-- Linking Files Documents -->
-    <link rel="stylesheet" href="assets/css/add-domain.css">
+    <link rel="stylesheet" href="assets/css/all-domains.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="close" id="closeBtn">
-                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-sharp">close</span>
                 </div>
             </div>
             <!-- Top section of the side bar ending -->
@@ -47,12 +47,12 @@
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="#" >
+                <a href="#" class="active">
                     <span class="material-symbols-sharp">dns</span>                    
                     <h3>Domain</h3>
                 </a>
 
-                <a href="add-domain.php" class="active">
+                <a href="add-domain.php">
                     <span class="material-symbols-sharp">add</span>
                     <h3>Add Domain</h3>
                 </a>
@@ -95,7 +95,7 @@
 
                 <div class="top">
 
-                    <button id="menu-btn">
+                    <button id="menuBtn">
                         <span class="material-symbols-sharp">segment</span>
                     </button>
 
@@ -124,46 +124,48 @@
 
 
             <div class="main-section">
-                <h1>Add Domain</h1>
-            <div class="recent-domains">
-                <h2>All Domains Added</h2>
-                <table>
+                <h1>All Domains Added</h1>
+                <div class="recent-domains">
 
-                    <thead>
-                        <tr>
-                            <th>Domain Name</th>
-                            <th>Status</th>
-                            <th>Expiry Date</th>
-                            <th>Auto Renew</th>
-                            <th>Registrar</th>
-                            <th></th>
-                        </tr>
-                    </thead>
+                    <table>
 
-                <tbody>
-                <?php include 'auth/recent-domains.php'; ?>
-                </tbody>
+                        <thead>
+                            <tr>
+                                <th>Domain Name</th>
+                                <th>Status</th>
+                                <th>Expiry Date</th>
+                                <th>Auto Renew</th>
+                                <th>Registrar</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <?php include 'auth/recent-domains.php'; ?>
+
+                        </tbody>
 
 
-                </table>
-                <a href="#">Show All</a>
+
+                    </table>
+
+                    
+                
+                </div>
+
             </div>
-
-        </div>
-
-    </div>
-
 
 
         </main>
         <!---------- Main Section Ending --------------------->
 
 
-    
-
-
     </div>
-<script src="assets/js/add-domain.js"></script>
+
+
+
+    
+    <script src="assets/js/all-domains.js"></script>
 </body>
 
 

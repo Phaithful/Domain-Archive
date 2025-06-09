@@ -193,9 +193,9 @@
                         </tr>
                     </thead>
 
-                <tbody>
-                <?php include 'auth/recent-domains.php'; ?>
-                </tbody>
+                    <tbody>
+                    <?php include 'auth/recent-domains.php'; ?>
+                    </tbody>
 
 
                 </table>
@@ -290,7 +290,7 @@
 
 
                 <div class="item add-domain">
-                    <a>
+                    <a href="add-domain.php">
                         <span class="material-symbols-sharp">add</span>
                         <h3>Add Domain</h3>
                     </a>
@@ -349,6 +349,9 @@
     
     <!-- <script src="assets/js/domain-list.js"></script> -->
     <script src="assets/js/dashboard.js"></script>
+    
+
+    
 </body>
 
 

@@ -6,6 +6,7 @@ body{
     background-color: whitesmoke;
 }
 
+
 section{
     height: 100vh !important;
     display: flex !important;
@@ -41,21 +42,20 @@ section{
 
 
 .logo{
-    margin-top: -50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 
 .logo img{
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     align-self: center;
 }
 
 .details-div h1{
     text-align: center;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     color: #373435;
 }
 
@@ -63,9 +63,9 @@ section{
     position: relative;
     text-align: center;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 28px;
     letter-spacing: 3px;
-    margin-top: 35px;
+    margin-top: 20px;
     color: #bd3470;
 }
 
@@ -118,7 +118,7 @@ span{
 }
 
 .welcome-txt{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     margin-left: 50px;
 }
@@ -138,7 +138,7 @@ span{
 .form-div h1{
     color: white;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     padding-bottom: 30px;
     letter-spacing: 2px;
 }
@@ -194,6 +194,35 @@ input:focus, select:focus {
 }
 
 
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s;
+    width: 30px;
+    height: 30px;
+}
+
+.eye-icon:hover {
+    color: #000;
+}
+
+
+
 .submit{
     padding: 0.7rem 2rem !important;
     background-color: white !important;
@@ -229,7 +258,7 @@ input:focus, select:focus {
     color:  #ffffff;
 }
 
-@media(min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 1200px){
     .logo{
         margin-top: -10px;
         margin-bottom: 20px;
@@ -258,11 +287,12 @@ input:focus, select:focus {
 
 }
 
-@media(min-width: 0px) and (max-width: 480px) {
+@media screen and (max-width: 758px){
 
     section{
         min-height: 100vh !important;
         display: block !important;
+        width: 100vw !important;
     }
 
     .details-div::after {
@@ -319,6 +349,7 @@ input:focus, select:focus {
         padding: 35px;
         margin-left: 5px;
         margin-bottom: 50px !important;
+        width: 80vw;
     }
 
     input, select {
@@ -335,16 +366,17 @@ input:focus, select:focus {
     .welcome-line {
         display: none;
     }
-    
-
-
-
-
 
 }
 
 
+@media screen and (max-width: 483px){
 
+    .form-bg{
+        width: 95vw;
+    }
+
+}
 
 
 

@@ -1,3 +1,5 @@
+
+
 const sideMenu = document.querySelector("aside");
 const menuBtn = document.querySelector("#menuBtn")
 const closeBtn = document.querySelector("#closeBtn")
@@ -31,6 +33,9 @@ themeToggler.addEventListener('click', () => {
     themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 })
+
+
+
 
 
 // fill recent domains table
@@ -81,10 +86,8 @@ Domains.forEach(domain => {
 
 
 
-Domains.forEach(domain => {
 
-    
-});
+
 
 
 

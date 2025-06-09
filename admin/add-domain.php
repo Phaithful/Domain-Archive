@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="close" id="closeBtn">
-                    <span class="material-symbols-outlined">close</span>
+                    <span class="material-symbols-sharp">close</span>
                 </div>
             </div>
             <!-- Top section of the side bar ending -->
@@ -74,7 +74,7 @@
                 </a>
 
 
-                <a href="auth/logout.php" class="logout">
+                <a href="#">
                     <span class="material-symbols-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -95,7 +95,7 @@
 
                 <div class="top">
 
-                    <button id="menu-btn">
+                    <button id="menuBtn">
                         <span class="material-symbols-sharp">segment</span>
                     </button>
 
@@ -127,35 +127,43 @@
                 <h1>Add Domain</h1>
                 <form id="add-domain-form" class="main-form">
                     <div>
-                        <label for="domain_name">Domain Name</label>
-                        <input type="text" name="domain_name" class="domain-name">
+                        <label for="domain-name">Domain Name</label>
+                        <input type="text" name="domain-name" class="domain-name">
                     </div>
                     
                     <div>
-                        <label for="purchase_date">Date Purchased</label>
-                        <input type="date" name="purchase_date" class="date-purchased">
+                        <label for="date-purchased">Date Purchased</label>
+                        <input type="date" name="date-purchased" class="date-purchased">
                     </div>
                     
                     <div>
-                        <label for="expiry_date">Expiry Date</label>
-                        <input type="date" name="expiry_date" class="expiry-date">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="date" name="expiry-date" class="expiry-date">
                     </div>
 
                     <div>
-                        <label for="registrar">Registrar (host company)</label>
+                        <label for="registrar">Registrar</label>
                         <input type="text" name="registrar" class="registrar">
                     </div>
                     <div>
-                <label>Auto Renew</label>
-                <div style="display: flex; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
-                    <label style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="radio" name="auto_renew" value="1" required>
-                    Yes
-                    </label>
-                    <label style="display: flex; align-items: center; gap: 0.5rem;">
-                    <input type="radio" name="auto_renew" value="0">
-                    No
-                    </label>
+
+                
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 0.5rem; justify-content: center;">
+                    <div>
+                        <label><u>Auto Renew</u></label>
+                    </div>
+
+                    <div style="display: flex; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="radio" name="auto_renew" value="1" required>
+                        Yes
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="radio" name="auto_renew" value="0">
+                        No
+                        </label>
+                    </div>
+                    
                 </div>
                 </div>
 
@@ -182,7 +190,10 @@
 
 
     </div>
-<script src="assets/js/add-domain.js"></script>
+
+    <script src="assets/js/add-domain.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+
 </body>
 
 
