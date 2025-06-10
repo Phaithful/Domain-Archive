@@ -121,7 +121,7 @@
                     </thead>
 
                     <tbody>
-                    <?php ## include 'auth/recent-domains.php'; ?>
+                    <?php  include 'auth/recent-domains.php'; ?>
                     </tbody>
 
 

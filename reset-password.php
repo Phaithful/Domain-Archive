@@ -1,15 +1,13 @@
 <?php
 // Prevent unauthorized access — token and email must be present
-// $token = $_GET['token'] ?? '';
-// $email = $_GET['email'] ?? '';
+$token = $_GET['token'] ?? '';
+$email = $_GET['email'] ?? '';
 
-// if (!$token || !$email) {
-//     header("Location: login.php");
-//     exit;
-// }
+if (!$token || !$email) {
+    header("Location: login.php");
+    exit;
+}
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">

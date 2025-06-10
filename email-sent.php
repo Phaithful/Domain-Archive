@@ -1,11 +1,11 @@
 <?php
 // Get email from GET param — make sure you redirect from forgot-password with ?email=...
-// $email = $_GET['email'] ?? null;
+$email = $_GET['email'] ?? null;
 
-// if (!$email) {
-//     echo "Email not provided. Cannot proceed.";
-//     exit;
-// }
+if (!$email) {
+    echo "Email not provided. Cannot proceed.";
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
