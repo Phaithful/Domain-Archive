@@ -97,82 +97,9 @@
             <!------------------ Insight End --------------------->
             <div class="insights">
 
-                <!--------------- Active Card ----------------->
-                <div class="active">
-                    <span class="material-symbols-sharp">domain</span>
-                    
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Active</h3>
-                            <h1>45</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38'cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>56.25%</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <small class="text-muted">
-                        last 24 Hours
-                    </small>
-                </div>
-                <!--------------- Active Card End ----------------->
-
-
-                <!--------------- Expire Soon Card ----------------->
-                <div class="soon">
-                    <span class="material-symbols-sharp">domain_disabled</span>
-                    
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Expire Soon</h3>
-                            <h1>10</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38'cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>12.5%</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <small class="text-muted">
-                        last 24 Hours
-                    </small>
-                </div>
-                <!--------------- Expire Soon Card End ----------------->
-
-
-                <!--------------- Expired Card ----------------->
-                <div class="expired">
-                    <span class="material-symbols-sharp">warning</span>
-                    
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Expired</h3>
-                            <h1>25</h1>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38'cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>31.25%</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <small class="text-muted">
-                        last 24 Hours
-                    </small>
-                </div>
                 <!--------------- Expired Card End ----------------->
+                <canvas id="barChart" style="max-width: 80%; max-height: 45vh; width: 80%" ></canvas>
+               
 
             </div>
             <!------------------ Insight End --------------------->
@@ -194,7 +121,7 @@
                     </thead>
 
                     <tbody>
-                    <?php include 'auth/recent-domains.php'; ?>
+                    <?php ## include 'auth/recent-domains.php'; ?>
                     </tbody>
 
 
@@ -348,6 +275,9 @@
     </div>
     
     <!-- <script src="assets/js/domain-list.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/bar-chart.js"></script>
+    <script src="assets/js/pie-chart.js"></script>
     <script src="assets/js/dashboard.js"></script>
     
 </body>

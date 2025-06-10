@@ -16,6 +16,7 @@
     --color-sucess: #006B3D;
     --color-warning: #FF681E;
 
+
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -268,104 +269,16 @@ main{
     margin-top: 3rem;
 }
 
-main .insights{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-}
-
-main .insights > div{
-    background: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    margin-top: 1rem;
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
-}
-
-main .insights > div:hover{
-    box-shadow: none;
-}
-
-
-main .insights > div span{
-    background-color: var(--color-sucess);
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 2rem;
-    font-variation-settings: 'wght' 200;
-}
-
-main .insights > div.soon span{
-    background: var(--color-warning);
-}
-
-main .insights > div.expired span{
-    background: var(--color-danger);
-}
-
-main .insights > div .middle{
+.insights{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main .insights h3{
-    margin: 1rem 0 0.6rem;
-    font-size: 1rem;
-}
-
-main .insights .progress{
-    position: relative;
-    width: 92px;
-    height: 92px;
-    border-radius: 50%;
-}
-
-main .insights svg{
-    width: 7rem;
-    height: 7rem;
-}
-
-main .insights svg circle{
-    fill: none;
-    stroke: var(--pink);
-    stroke-width: 14;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-}
-
-main .insights .active svg circle{
-    stroke-dashoffset: -30;
-    stroke-dasharray: 200;
-}
-
-main .insights .soon svg circle{
-    stroke-dashoffset: 20;
-    stroke-dasharray: 80;
-}
-
-main .insights .expired svg circle{
-    stroke-dashoffset: 35;
-    stroke-dasharray: 110;
-}
-
-main .insights .progress .number{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 45vh;
+    gap: 50px;
 }
 
-main .insights small{
-    margin-top: 1.3rem;
-    display: block;
-}
+
 
 main .recent-domains{
     margin-top: 2rem;   
