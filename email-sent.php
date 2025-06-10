@@ -35,6 +35,7 @@ if (!$email) {
         <p>Don't have an account? <a href="index.php">Sign In</a></p>
     </div>
 </nav>
+<div id="notification-container"></div>
 
 <!-- OTP Section -->
 <section class="hero">

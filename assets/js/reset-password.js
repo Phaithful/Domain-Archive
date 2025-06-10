@@ -83,7 +83,7 @@ $('#resetForm').submit(function (e) {
     }
 
     $.ajax({
-        url: '/domain-management-system/Access-Archive/Domain-Archive/auth/reset-password.php',
+        url: '/domain-management-system/Domain/Domain-Archive/auth/reset-password.php',
         method: 'POST',
         data: {
             new_password: password,

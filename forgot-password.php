@@ -37,6 +37,7 @@
 
     </nav>
     <!-- Nav Bar Ending -->
+     <div id="notification-container"></div> 
 
 
     <!-- Body Section -->

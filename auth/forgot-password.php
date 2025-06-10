@@ -21,12 +21,22 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit;
 }
 
+
 // Sanitize and validate email
 $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+
+
+
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode(["status" => "error", "message" => "Invalid email address"]);
     exit;
 }
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    error_log("Invalid email: $email");
+    echo json_encode(["status" => "error", "message" => "Invalid email address"]);
+    exit;
+}
+
 
 // Check if email exists in database
 $stmt = $conn->prepare("SELECT email FROM userdata WHERE email = ?");
@@ -56,24 +66,19 @@ if (!$update->execute()) {
 
 // Send OTP via Gmail SMTP using PHPMailer
 $mail = new PHPMailer(true);
-try {
-    // Server settings
+ try {     
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-
-    // 🔐 Your Gmail and 16-char App Password
-    $mail->Username   = 'danassco360@gmail.com'; // <-- replace with your Gmail
-    $mail->Password   = 'fjvuyrphwfdpxwqf'; // <-- no spaces, no quotes
-
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Username   = 'danassco360@gmail.com'; // your Gmail
+    $mail->Password   = 'clhpkpoqqdaquoiz'; // your App Password
+    $mail->SMTPSecure = "tls"; // Use TLS encryption
     $mail->Port       = 587;
 
-    // Sender & recipient
-    $mail->setFrom('danassco360@gmail.com', 'Domain Archive');
+
+    $mail->setFrom('danassco360@gmail.com', 'Domains Archive'); // same as username
     $mail->addAddress($email);
 
-    // Email content
     $mail->isHTML(true);
     $mail->Subject = 'Your OTP Code';
     $mail->Body = '
@@ -95,28 +100,8 @@ try {
             Please use the following One-Time Password (OTP):
             </p>
 
-            <div style="display: flex; justify-content: center; gap: 10px; margin: 20px 0;">
-        ';
-
-        foreach (str_split($otp) as $digit) {
-        $mail->Body .= '
-            <div style="
-                width: 40px;
-                height: 50px;
-                background-color: #edeffd;
-                color: #181a1e;
-                font-size: 24px;
-                font-weight: bold;
-                border-radius: 6px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid #bd3470;
-            ">' . $digit . '</div>
-        ';
-        }
-
-        $mail->Body .= '
+            <div style="background-color: transparent; color: white; padding: 0 25px; font-size: 50px; font-weight: 900; text-align: left; border-radius: 8px; letter-spacing: 7px; margin: 20px 0;">
+                ' . $otp . '
             </div>
 
             <p style="font-size: 16px; line-height: 1.6;">
@@ -127,13 +112,11 @@ try {
             If you did not request this, you can safely ignore this email.
             </p>
 
-            <p style="font-size: 14px; color: #999999;">– Your Website Team</p>
+            <p style="font-size: 14px; color: #999999;"> Access Solution Limited</p>
         </div>
 
         </body>
-        </html>
-    ';
-
+        </html>';
     $mail->send();
 
     echo json_encode(["status" => "success", "message" => "OTP sent", "email" => $email]);
@@ -142,3 +125,4 @@ try {
     echo json_encode(["status" => "error", "message" => "Mailer Error: " . $mail->ErrorInfo]);
 }
 ?>
+

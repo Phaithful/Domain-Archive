@@ -60,7 +60,7 @@
                         <input type="submit" name="submit" value="SUBMIT" class="submit">
                     </div>
 
-                    <a href="forgot-password.php">Forgot Password?</span></a>
+                    <span><a href="forgot-password.php">Forgot Password?</a></span>
                     <!-- Message area (just below form submit) -->
                     <div id="loginMessage" class="mt-3"></div> 
                 </form>
