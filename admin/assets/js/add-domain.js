@@ -88,12 +88,45 @@ menuBtn.addEventListener('click', () => {
 })
 
 
-// dark mode toggler
-themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme-variables');
+// // dark mode toggler
+// themeToggler.addEventListener('click', () => {
+//     document.body.classList.toggle('dark-theme-variables');
 
+//     themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+//     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+// })
+
+
+
+
+
+// Apply saved theme on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark-theme-variables");
+        themeToggler.querySelector('span:nth-child(1)').classList.add('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.remove('active');
+    } else {
+        document.documentElement.classList.remove("dark-theme-variables");
+        themeToggler.querySelector('span:nth-child(1)').classList.remove('active');
+        themeToggler.querySelector('span:nth-child(2)').classList.add('active');
+    }
+});
+
+// Dark mode toggler logic
+// const themeToggler = document.querySelector(".theme-toggler");
+
+themeToggler.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle("dark-theme-variables");
+
+
+    // Toggle active states for the icons
     themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-})
 
+    // Save to localStorage
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+});
 

@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+            document.documentElement.classList.add("dark-theme-variables");
+            }
+        })(); 
+    </script>
+
     <!-- Document Links -->
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
@@ -89,22 +99,22 @@
         <!---------------------- Collapsable Side Bar Ending --------------------------->
 
 
-        <!---------- Main Section --------------------->
+        <!---------------- Main Section --------------------->
         <main>
 
             <h1>Dashboard</h1>
 
-            <!------------------ Insight End --------------------->
+
             <div class="insights">
 
-                <!--------------- Expired Card End ----------------->
+                <!--------------- Bar Chart ----------------->
                 <canvas id="barChart" style="max-width: 80%; max-height: 45vh; width: 80%" ></canvas>
                
 
             </div>
-            <!------------------ Insight End --------------------->
 
 
+            <!------------------ Recent Domains Table --------------------->
             <div class="recent-domains">
                 <h2>Recent Domains Added</h2>
                 <table>
@@ -121,13 +131,14 @@
                     </thead>
 
                     <tbody>
-                    <?php  include 'auth/recent-domains.php'; ?>
+                    <?php include 'auth/recent-domains.php'; ?>
                     </tbody>
 
 
                 </table>
-                <a href="#">Show All</a>
+                <a href="all-domains.php">Show All</a>
             </div>
+            <!------------------ Recent Domains Table End --------------------->
 
 
         </main>

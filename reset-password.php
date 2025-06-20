@@ -1,5 +1,5 @@
 <?php
-// Prevent unauthorized access — token and email must be present
+//Prevent unauthorized access — token and email must be present
 $token = $_GET['token'] ?? '';
 $email = $_GET['email'] ?? '';
 

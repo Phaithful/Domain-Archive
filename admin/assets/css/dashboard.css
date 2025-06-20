@@ -492,7 +492,7 @@ main .recent-domains a{
 @media screen and (max-width: 1200px){
     .container{
         width: 94%;
-        grid-template-columns: 7rem auto 23rem;
+        grid-template-columns: 7rem auto;
     }
 
     aside .logo  h2 {
@@ -510,6 +510,11 @@ main .recent-domains a{
     aside .sidebar a:last-child{
         position: relative;
         margin-top: 1.8rem;
+    }
+
+
+    main{
+        margin-top: 6rem;
     }
 
     main .insights{
@@ -540,6 +545,35 @@ main .recent-domains a{
     main table tbody tr td:nth-child(5){
         display: none;
     }
+
+
+    .right{
+        width: 87vw;
+        margin: 4rem 8rem;
+    }
+
+
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
 
 
 
